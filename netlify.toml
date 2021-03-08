@@ -8,7 +8,7 @@
   NPM_VERSION = "7.3.0"
 
 [context.production]
-  command = "cd themes/doks/ && npm i && cd ../.. && hugo -b $URL --gc --minify"
+  command = "cd themes/doks/ && npm i && cd ../.. && hugo -b $URL"
 
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
