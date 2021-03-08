@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+            <h1 class="mt-0">{{ .Title }}</h1>
+        </div>
+        <div class="col-lg-9 col-xl-8 text-center">
+            <p class="lead">{{ .Params.lead | safeHTML }}</p>
+            <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button"> Get started</a>
+            <p class="meta">Open-source Apache-2.0 Licensed. <br>
+                <a href="https://github.com/prometheus-operator/prometheus-operator/releases/tag/{{ .Site.Data.prometheusOperator.version }}">
+                    GitHub {{ .Site.Data.prometheusOperator.version }}
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-sm">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-5">
+                <h2 class="h4">Kubernetes Custom Resources</h2>
+                <p>Use Kubernetes custom resources to deploy and manage Prometheus, Alertmanager, and related
+                    components.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Simplified Deployment Configuration</h2>
+                <p>Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas
+                    from a native Kubernetes resource.</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Prometheus Target Configuration</h2>
+                <p>Automatically generate monitoring target configurations based on familiar Kubernetes label queries;
+                    no need to learn a Prometheus specific configuration language.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-9">
+            {{- .Content -}}
+        </div>
+    </div>
+</section>
+{{ end }}

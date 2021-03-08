@@ -1,0 +1,56 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Prometheus Operator"
+titleSeparator = "-"
+titleAddition = "Running Prometheus on Kubernetes"
+description = "The Prometheus Operator manages Prometheus clusters atop Kubernetes."
+
+### Open Graph + Twitter Cards
+#images = ["doks.png"]
+#twitterSite = "henkverlinde"
+#twitterCreator = "henkverlinde"
+#facebookAuthor = "verlinde.henk"
+#facebookPublisher = "verlinde.henk"
+#ogLocale = "en_US"
+#
+### JSON-LD
+#schemaType = "Organization"
+#schemaLogo = "logo-doks.png"
+#schemaTwitter = "https://twitter.com/henkverlinde"
+#schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaGitHub = "https://github.com/prometheus-operator"
+#schemaSection = "blog"
+
+# Sitelinks Search Box
+siteLinksSearchBox = false
+
+# Chrome Browser
+themeColor = "#3371e3"
+
+## Images
+#quality = 85
+#bgColor = "#fff"
+#landscapePhotoWidths = [900, 800, 700, 600, 500]
+#portraitPhotoWidths = [800, 700, 600, 500]
+#lqipWidth = "20x"
+
+# Footer
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and based on <a href=\"https://getdoks.org/\">Doks</a>"
+
+## Alert
+#alert = false
+#alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+#
+# Edit Page
+docsRepo = "https://github.com/h-enk/doks"
+editPage = false
+
+#[options]
+#  lazySizes = true
+#  clipBoard = true
+#  instantPage = true
+#  flexSearch = true
+#  darkMode = true
+#  bootStrapJs = false
+#  breadCrumb = false
