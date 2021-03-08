@@ -51,7 +51,21 @@ $link-hover-color: $secondary;
   border-image-source: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--prometheus);
+}
+
 .home .btn-primary:hover {
   background-color: var(--prometheus);
   border-color: var(--prometheus);
+}
+
+.docs-link:hover,
+.docs-link.active,
+.page-links a:hover {
+  color: var(--prometheus);
+}
+
+pre, code {
+  background-color: #f6f8fa;
 }
