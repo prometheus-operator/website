@@ -48,7 +48,30 @@ $link-hover-color: $secondary;
 }
 
 .header-bar {
-  border-image-source: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
+  border-top: none;
+  height: 4px;
+  background: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
+  background-size: 200% 200%;
+
+  -webkit-animation: headerBarGradient 15s ease infinite;
+  -moz-animation: headerBarGradient 15s ease infinite;
+  animation: headerBarGradient 15s ease infinite;
+}
+
+@-webkit-keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
+}
+@-moz-keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
+}
+@keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
