@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+description: "The Prometheus Operator provides Kubernetes native deployment and management of Prometheus and related monitoring components"
 lead: ""
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
@@ -24,7 +24,7 @@ The Prometheus operator includes, but is not limited to, the following features:
 
 ## Get started
 
-<!-- There are two main ways to get started with Doks: -->
+<!-- There are two main ways to get started with the Prometheus Operator and kube-prometheus: -->
 
 ### Tutorial
 
@@ -33,13 +33,13 @@ The Prometheus operator includes, but is not limited to, the following features:
 We still need to write you a proper tutorial...  
 Feel free to [comment on the opened issue](https://github.com/prometheus-operator/website/issues/3) if you want to help!
 
-<!-- Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/) -->
+<!-- Step-by-step instructions on how to deploy the Prometheus Operator and kube-prometheus. [Tutorial →](https://getdoks.org/tutorial/introduction/) -->
 
 ### Quick Start
 
 {{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." >}}
 
-One page summary of how to start a new Doks project. [Quick Start →]({{< ref "quick-start" >}})
+One page summary of how to start with the Prometheus Operator and kube-prometheus. [Quick Start →]({{< ref "quick-start" >}})
 
 ## Go further
 
@@ -47,7 +47,7 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →]({{< ref "contributing" >}})
+Find out how to contribute to the Prometheus Operator and kube-prometheus. [Contributing →]({{< ref "contributing" >}})
 
 ## Support
 
