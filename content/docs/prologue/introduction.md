@@ -24,13 +24,16 @@ The Prometheus operator includes, but is not limited to, the following features:
 
 ## Get started
 
-There are two main ways to get started with Doks:
+<!-- There are two main ways to get started with Doks: -->
 
 ### Tutorial
 
 {{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." >}}
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+We still need to write you a proper tutorial...  
+Feel free to [comment on the opened issue](https://github.com/prometheus-operator/website/issues/3) if you want to help!
+
+<!-- Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/) -->
 
 ### Quick Start
 
@@ -46,6 +49,9 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 Find out how to contribute to Doks. [Contributing →]({{< ref "contributing" >}})
 
-## Help
+## Support
 
-Get help on Doks.
+We have [GitHub Discussions](https://github.com/prometheus-operator/kube-prometheus/discussions) for kube-prometheus.
+We recommend asking questions there, as this is searchable compared to Slack.
+
+We're happy to talk to you on the [Kubernetes Slack](http://slack.k8s.io/) in #prometheus-operator!
