@@ -17,7 +17,7 @@ description = "The Prometheus Operator manages Prometheus clusters atop Kubernet
 ### JSON-LD
 #schemaType = "Organization"
 #schemaLogo = "logo-doks.png"
-#schemaTwitter = "https://twitter.com/henkverlinde"
+schemaTwitter = "https://twitter.com/PromOperator"
 #schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/prometheus-operator"
 #schemaSection = "blog"
