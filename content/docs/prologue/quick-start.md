@@ -59,7 +59,7 @@ Prometheus, Alertmanager, and Grafana dashboards can be accessed quickly using `
 You can also learn how to [expose via an Ingress →]({{< ref "docs/exposing-prometheus-alertmanager-grafana-ingress" >}})
 
 ```shell
-kubectl --namespace monitoring port-forward svc/alertmanager-k8s 9090
+kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090
 ```
 
 Open Prometheus on [localhost:9090](http://localhost:9090) in your browser.
