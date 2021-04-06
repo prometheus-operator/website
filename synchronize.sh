@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
+set -xe
+
 rm -rf repos/
 mkdir repos/
 
-git clone git://github.com/metalmatze/prometheus-operator -b website --depth 1 repos/prometheus-operator
-git clone git://github.com/metalmatze/kube-prometheus -b website --depth 1 repos/kube-prometheus
+git clone git://github.com/prometheus-operator/prometheus-operator -b master --depth 1 repos/prometheus-operator
+git clone git://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 
-# promtheus-operator
+# prometheus-operator
 
 cp repos/prometheus-operator/ADOPTERS.md content/adopters.md
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/prologue/contributing.md
@@ -19,7 +21,7 @@ cp repos/prometheus-operator/Documentation/rbac.md content/docs/operator/rbac.md
 cp repos/prometheus-operator/Documentation/thanos.md content/docs/operator/thanos.md
 cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/operator/troubleshooting.md
 
-cp repos/prometheus-operator/Documentation/custom-metrics-elements.png images/custom-metrics-elements.png
+cp repos/prometheus-operator/Documentation/custom-metrics-elements.png content/docs/operator/custom-metrics-elements.png
 
 # kube-prometheus
 

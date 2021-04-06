@@ -6,6 +6,7 @@
 # Generated content to ignore (sorted alphabetically)
 
 /content/adopters.md
+/content/custom-metrics-elements.png
 /content/docs/developing-prometheus-rules-and-grafana-dashboards.md
 /content/docs/exposing-prometheus-alertmanager-grafana-ingress.md
 /content/docs/kube-prometheus-on-kubeadm.md
@@ -23,4 +24,3 @@
 /content/docs/operator/thanos.md
 /content/docs/operator/troubleshooting.md
 /content/docs/prologue/contributing.md
-/images/custom-metrics-elements.png
