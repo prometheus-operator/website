@@ -25,7 +25,7 @@ All you need is access to a **Kubernetes cluster with kubectl!**
 
 ## Get the kube-prometheus project
 
-For a quick start we are going to deploy a cmopiled version of the Kubernetes [manifests](https://github.com/prometheus-operator/kube-prometheus/tree/main/manifests).
+For a quick start we are going to deploy a compiled version of the Kubernetes [manifests](https://github.com/prometheus-operator/kube-prometheus/tree/main/manifests).
 
 You can either clone the kube-prometheus from GitHub
 
