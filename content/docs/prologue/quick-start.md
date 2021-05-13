@@ -98,6 +98,6 @@ kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
 
 ## Next Steps
 
-kube-prometheus is developerd as a library.  
+kube-prometheus is developed as a library.  
 The idea is that you get a Kubernetes cluster monitoring stack and additionally you can add more Prometheus servers.
 
