@@ -21,7 +21,9 @@ cp repos/prometheus-operator/Documentation/rbac.md content/docs/operator/rbac.md
 cp repos/prometheus-operator/Documentation/thanos.md content/docs/operator/thanos.md
 cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/operator/troubleshooting.md
 
-cp repos/prometheus-operator/Documentation/custom-metrics-elements.png content/docs/operator/custom-metrics-elements.png
+# hack to fix link to flow-chart
+mkdir -p content/docs/operator/troubleshooting
+cp repos/prometheus-operator/Documentation/custom-metrics-elements.png content/docs/operator/troubleshooting/custom-metrics-elements.png
 
 # kube-prometheus
 
