@@ -91,7 +91,7 @@ You can login with the username `admin` and password `admin`.
 
 ## Remove kube-prometheus 
 
-If you're down experimenting with kube-prometheus and the Prometheus Operator you can simply teardown the deployment by running:
+If you're done experimenting with kube-prometheus and the Prometheus Operator you can simply teardown the deployment by running:
 ```shell
 kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
 ```
