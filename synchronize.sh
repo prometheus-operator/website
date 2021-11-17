@@ -5,7 +5,7 @@ set -xe
 rm -rf repos/
 mkdir repos/
 
-git clone git://github.com/prometheus-operator/prometheus-operator -b master --depth 1 repos/prometheus-operator
+git clone git://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
 git clone git://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 
 # prometheus-operator
