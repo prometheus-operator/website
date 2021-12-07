@@ -29,8 +29,8 @@ cp repos/prometheus-operator/Documentation/custom-metrics-elements.png content/d
 
 cp repos/kube-prometheus/docs/blackbox-exporter.md content/docs/kube/blackbox-exporter.md
 cp repos/kube-prometheus/docs/deploy-kind.md content/docs/kube/deploy-kind.md
-cp repos/kube-prometheus/docs/developing-prometheus-rules-and-grafana-dashboards.md content/docs/developing-prometheus-rules-and-grafana-dashboards.md
-cp repos/kube-prometheus/docs/exposing-prometheus-alertmanager-grafana-ingress.md content/docs/exposing-prometheus-alertmanager-grafana-ingress.md
+cp repos/kube-prometheus/docs/customizations/developing-prometheus-rules-and-grafana-dashboards.md content/docs/developing-prometheus-rules-and-grafana-dashboards.md
+cp repos/kube-prometheus/docs/customizations/exposing-prometheus-alertmanager-grafana-ingress.md content/docs/exposing-prometheus-alertmanager-grafana-ingress.md
 cp repos/kube-prometheus/docs/kube-prometheus-on-kubeadm.md content/docs/kube-prometheus-on-kubeadm.md
 cp repos/kube-prometheus/docs/monitoring-external-etcd.md content/docs/kube/monitoring-external-etcd.md
 cp repos/kube-prometheus/docs/monitoring-other-namespaces.md content/docs/kube/monitoring-other-namespaces.md
