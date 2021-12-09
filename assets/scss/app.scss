@@ -92,3 +92,9 @@ $link-hover-color: $secondary;
 pre, code {
   background-color: #f6f8fa;
 }
+
+.docs-content {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $gray-200 $white;
+}
