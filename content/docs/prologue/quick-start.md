@@ -45,7 +45,7 @@ Once you have the files on your machine change into the project's root directory
 # Create the namespace and CRDs, and then wait for them to be availble before creating the remaining resources
 kubectl create -f manifests/setup
 
-# Wait until CRD "servicemonitors" was created. The message "No resources found" means success in this context.
+# Wait until the "servicemonitors" CRD is created. The message "No resources found" means success in this context.
 until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done
 
 kubectl create -f manifests/
