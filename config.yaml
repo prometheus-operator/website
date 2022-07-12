@@ -3,3 +3,8 @@ languageCode: "en-us"
 title: "Prometheus Operator"
 
 theme: doks
+
+# Disable minification of JS code to workaround
+# https://github.com/h-enk/doks/issues/716
+minify:
+  disableJS: true
