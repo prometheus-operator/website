@@ -24,20 +24,16 @@ The Prometheus operator includes, but is not limited to, the following features:
 
 ## Get started
 
-<!-- There are two main ways to get started with the Prometheus Operator and kube-prometheus: -->
-
 ### Tutorial
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." >}}
+{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
 
-We still need to write you a proper tutorial...  
+We still need to write you a proper tutorial...
 Feel free to [comment on the opened issue](https://github.com/prometheus-operator/website/issues/3) if you want to help!
-
-<!-- Step-by-step instructions on how to deploy the Prometheus Operator and kube-prometheus. [Tutorial →](https://getdoks.org/tutorial/introduction/) -->
 
 ### Quick Start
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." >}}
+{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
 
 One page summary of how to start with the Prometheus Operator and kube-prometheus. [Quick Start →]({{< ref "quick-start" >}})
 

@@ -2,14 +2,14 @@
 /repos/kube-prometheus/
 /repos/prometheus-operator/
 /resources/_gen/
+/static/img
 
 # Generated content to ignore (sorted alphabetically)
 
 /content/adopters.md
-/content/custom-metrics-elements.png
-/content/docs/developing-prometheus-rules-and-grafana-dashboards.md
-/content/docs/exposing-prometheus-alertmanager-grafana-ingress.md
-/content/docs/kube-prometheus-on-kubeadm.md
+/content/docs/kube/developing-prometheus-rules-and-grafana-dashboards.md
+/content/docs/kube/exposing-prometheus-alertmanager-grafana-ingress.md
+/content/docs/kube/kube-prometheus-on-kubeadm.md
 /content/docs/kube/blackbox-exporter.md
 /content/docs/kube/deploy-kind.md
 /content/docs/kube/monitoring-external-etcd.md

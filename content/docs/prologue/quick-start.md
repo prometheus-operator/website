@@ -59,7 +59,7 @@ but it may be necessary to run the command multiple times for all components to 
 
 Prometheus, Alertmanager, and Grafana dashboards can be accessed quickly using `kubectl port-forward` after running the quickstart via the commands below.
 
-You can also learn how to [expose via an Ingress →]({{< ref "docs/exposing-prometheus-alertmanager-grafana-ingress" >}})
+You can also learn how to [expose via an Ingress →]({{< ref "docs/kube/exposing-prometheus-alertmanager-grafana-ingress" >}})
 
 ```shell
 kubectl --namespace monitoring port-forward svc/prometheus-k8s 9090

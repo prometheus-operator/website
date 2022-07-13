@@ -46,6 +46,11 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 docsRepo = "https://github.com/h-enk/doks"
 editPage = false
 
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
+
 #[options]
 #  lazySizes = true
 #  clipBoard = true
