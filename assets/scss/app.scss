@@ -1,100 +1,35 @@
-// Import our base theme
-
 /** Import Bootstrap functions */
 @import "bootstrap/scss/functions";
 
 /** Import theme variables */
-@import "../../themes/doks/assets/scss/common/variables";
-
-$kubernetes: #3371e3;
-$prometheus: #e6522c;
-
-$primary: $kubernetes;
-$secondary: $prometheus;
-
-$link-color: $primary;
-$link-hover-color: $secondary;
+@import "common/variables";
 
 /** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
+/** Import highlight.js */
+// @import "highlight.js/scss/github-dark-dimmed";
+
+/** Import KaTeX */
+@import "katex/dist/katex";
+
 /** Import theme styles */
-@import "../../themes/doks/assets/scss/common/fonts";
-@import "../../themes/doks/assets/scss/common/global";
-@import "../../themes/doks/assets/scss/common/dark";
-@import "../../themes/doks/assets/scss/components/alerts";
-@import "../../themes/doks/assets/scss/components/buttons";
-@import "../../themes/doks/assets/scss/components/code";
-// @import "../../themes/doks/assets/scss/components/syntax";
-@import "../../themes/doks/assets/scss/components/comments";
-@import "../../themes/doks/assets/scss/components/forms";
-@import "../../themes/doks/assets/scss/components/images";
-@import "../../themes/doks/assets/scss/components/search";
-@import "../../themes/doks/assets/scss/components/tables";
-@import "../../themes/doks/assets/scss/layouts/footer";
-@import "../../themes/doks/assets/scss/layouts/header";
-@import "../../themes/doks/assets/scss/layouts/pages";
-@import "../../themes/doks/assets/scss/layouts/posts";
-@import "../../themes/doks/assets/scss/layouts/sidebar";
-
-
-::selection {
-  background: lighten($primary, 25%);
-}
-
-:root {
-  --kubernetes: #3371e3;
-  --prometheus: #e6522c;
-}
-
-.header-bar {
-  border-top: none;
-  height: 4px;
-  background: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
-  background-size: 200% 200%;
-
-  -webkit-animation: headerBarGradient 15s ease infinite;
-  -moz-animation: headerBarGradient 15s ease infinite;
-  animation: headerBarGradient 15s ease infinite;
-}
-
-@-webkit-keyframes headerBarGradient {
-  0%{background-position:0% 0%}
-  50%{background-position:200% 0%}
-  100%{background-position:400% 0%}
-}
-@-moz-keyframes headerBarGradient {
-  0%{background-position:0% 0%}
-  50%{background-position:200% 0%}
-  100%{background-position:400% 0%}
-}
-@keyframes headerBarGradient {
-  0%{background-position:0% 0%}
-  50%{background-position:200% 0%}
-  100%{background-position:400% 0%}
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: var(--prometheus);
-}
-
-.home .btn-primary:hover {
-  background-color: var(--prometheus);
-  border-color: var(--prometheus);
-}
-
-.docs-link:hover,
-.docs-link.active,
-.page-links a:hover {
-  color: var(--prometheus);
-}
-
-pre, code {
-  background-color: #f6f8fa;
-}
-
-.docs-content {
-    overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: $gray-200 $white;
-}
+@import "common/fonts";
+@import "common/global";
+@import "common/dark";
+@import "components/alerts";
+@import "components/buttons";
+@import "components/code";
+@import "components/details";
+@import "components/syntax";
+@import "components/comments";
+@import "components/forms";
+@import "components/images";
+@import "components/mermaid";
+@import "components/search";
+@import "components/tables";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/sidebar";
