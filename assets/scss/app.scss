@@ -4,6 +4,15 @@
 /** Import theme variables */
 @import "common/variables";
 
+$kubernetes: #3371e3;
+$prometheus: #e6522c;
+
+$primary: $kubernetes;
+$secondary: $prometheus;
+
+$link-color: $primary;
+$link-hover-color: $secondary;
+
 /** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
@@ -33,3 +42,70 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/sidebar";
+
+
+
+::selection {
+  background: lighten($primary, 25%);
+}
+
+[data-dark-mode] ::selection {
+  background: darken($primary, 25%);
+}
+
+:root {
+  --kubernetes: #3371e3;
+  --prometheus: #e6522c;
+}
+
+.header-bar {
+  border-top: none;
+  height: 4px;
+  background: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
+  background-size: 200% 200%;
+
+  -webkit-animation: headerBarGradient 15s ease infinite;
+  -moz-animation: headerBarGradient 15s ease infinite;
+  animation: headerBarGradient 15s ease infinite;
+}
+
+@-webkit-keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
+}
+@-moz-keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
+}
+@keyframes headerBarGradient {
+  0%{background-position:0% 0%}
+  50%{background-position:200% 0%}
+  100%{background-position:400% 0%}
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--prometheus);
+}
+
+.home .btn-primary:hover {
+  background-color: var(--prometheus);
+  border-color: var(--prometheus);
+}
+
+.docs-link:hover,
+.docs-link.active,
+.page-links a:hover {
+  color: var(--prometheus);
+}
+
+pre, code {
+  background-color: #f6f8fa;
+}
+
+.docs-content {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $gray-200 $white;
+}
