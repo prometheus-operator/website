@@ -1,5 +1,6 @@
-# website
-The Prometheus Operator &amp; kube-prometheus website
+# The Prometheus Operator &amp; kube-prometheus website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cb1050ce-72fb-4aaf-89bb-5944c4c848b4/deploy-status)](https://app.netlify.com/sites/sleepy-hopper-0fdb6b/deploys)
 
 ## Development
 
