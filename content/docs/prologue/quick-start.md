@@ -14,7 +14,7 @@ toc: true
 
 ## Requirements
 
-The easiest way of starting with the Prometheus Operator is by deploying it as part of kube-prometheus.  
+The easiest way of starting with the Prometheus Operator is by deploying it as part of kube-prometheus.
 kube-prometheus deploys the Prometheus Operator and already schedules a Prometheus called `prometheus-k8s` with alerts and rules by default.
 
 All you need is access to a **Kubernetes cluster with kubectl!**
