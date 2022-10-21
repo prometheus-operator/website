@@ -5,8 +5,13 @@ set -xe
 rm -rf repos/
 mkdir repos/
 
-git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
-git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
+if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
+  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
+else
+  ln -s ../../prometheus-operator repos/prometheus-operator
+  ln -s ../../kube-prometheus repos/kube-prometheus
+fi
 
 for r in repos/prometheus-operator repos/kube-prometheus; do
   echo "$r -> ""$(cd $r && git rev-parse HEAD)"
@@ -25,6 +30,7 @@ cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/
 
 # prometheus-operator section
 cp repos/prometheus-operator/Documentation/api.md content/docs/operator/api.md
+cp repos/prometheus-operator/Documentation/operator.md content/docs/operator/operator.md
 cp repos/prometheus-operator/Documentation/compatibility.md content/docs/operator/compatibility.md
 cp repos/prometheus-operator/Documentation/design.md content/docs/operator/design.md
 cp repos/prometheus-operator/Documentation/high-availability.md content/docs/operator/high-availability.md
