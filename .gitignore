@@ -1,6 +1,6 @@
 /public/
-/repos/kube-prometheus/
-/repos/prometheus-operator/
+/repos/kube-prometheus
+/repos/prometheus-operator
 /resources/_gen/
 /static/img
 
@@ -21,6 +21,7 @@
 /content/docs/operator/custom-metrics-elements.png
 /content/docs/operator/design.md
 /content/docs/operator/high-availability.md
+/content/docs/operator/operator.md
 /content/docs/operator/rbac-crd.md
 /content/docs/operator/rbac.md
 /content/docs/operator/storage.md
