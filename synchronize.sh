@@ -27,6 +27,8 @@ cp repos/prometheus-operator/CONTRIBUTING.md content/docs/prologue/contributing.
 # user guides section
 cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/user-guides/getting-started.md
 cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/user-guides/alerting.md
+cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/user-guides/prometheus-agent.md
+cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/user-guides/scrapeconfig.md
 cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/user-guides/webhook.md
 
 # prometheus-operator section
