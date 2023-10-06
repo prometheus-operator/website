@@ -3,6 +3,7 @@
 /repos/prometheus-operator
 /resources/_gen/
 /static/img
+/.hugo_build.lock
 
 # Generated content to ignore (sorted alphabetically)
 
@@ -17,6 +18,8 @@
 /content/docs/user-guides/getting-started.md
 /content/docs/user-guides/alerting.md
 /content/docs/user-guides/webhook.md
+/content/docs/user-guides/prometheus-agent.md
+/content/docs/user-guides/scrapeconfig.md
 /content/docs/operator/api.md
 /content/docs/operator/compatibility.md
 /content/docs/operator/custom-metrics-elements.png
