@@ -36,7 +36,7 @@ themeColor = "#3371e3"
 #lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and based on <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and based on <a href=\"https://getdoks.org/\">Doks</a><a href=\"https://hachyderm.io/@PromOperator\" rel=\"me\"></a>"
 
 ## Alert
 #alert = false
