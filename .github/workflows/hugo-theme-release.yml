@@ -1,0 +1,26 @@
+name: Hugo Theme Release
+
+on:
+  schedule:
+    # Check every week.
+    - cron: '0 0 * * 0'
+
+jobs:
+  check-theme-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check for new theme release
+        run: |
+          # Get the latest release tag downstream.
+          cd themes/doks
+          git fetch --tags
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1` | cut -d. -f1)
+          current_tag=$(git describe --tags | cut -d. -f1)
+          if [ "$latest_tag" != "$current_tag" ]; then
+            repository=$(git config --get remote.origin.url)
+            echo "[OUTDATED] $repository: $latest_tag/$current_tag"
+            exit 1
+          else
+            echo "[UP-TO-DATE] No new theme release available."
+          fi

@@ -1,15 +1,19 @@
-all: theme synchronize public
-
-.PHONY: synchronize
-synchronize:
-	bash synchronize.sh
+all: theme synchronize build
 
 .PHONY: theme
 theme:
-	cd themes/doks/ && \
+	@cd themes/doks/ && \
 	npm install && \
 	rm -rf content
 
-.PHONY: public
-public:
+.PHONY: synchronize
+synchronize:
+	bash -x synchronize.sh
+
+.PHONY: build
+build:
 	hugo
+
+.PHONY: serve
+serve:
+	hugo serve
