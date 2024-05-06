@@ -23,6 +23,12 @@ cp -r repos/prometheus-operator/Documentation/img static/img
 
 # prologue section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/prologue/contributing.md
+# copy linked pages
+cp repos/prometheus-operator/LICENSE content/docs/prologue/license.md
+cp repos/prometheus-operator/code-of-conduct.md content/docs/prologue/code-of-conduct.md
+cp repos/prometheus-operator/DCO content/docs/prologue/dco.md
+cp repos/prometheus-operator/README.md content/docs/prologue/README.md
+cp repos/prometheus-operator/TESTING.md content/docs/prologue/TESTING.md
 
 # user guides section
 cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/user-guides/getting-started.md
