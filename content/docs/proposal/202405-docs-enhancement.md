@@ -37,19 +37,19 @@ It is important to keep the documentation of a project updated with the developm
 
 I believe a basic structure for the website should be as given below:
 * Getting Started
-* Introduction
-* Installation Guide
+  * Introduction
+  * Installation Guide
 * API Reference
 * User Guide
 * Administrator Guide
 * Community
-* Contributing
-* Testing
-* DCO
-* License
-* Code of Conduct
-* Release
-* Adopters
+  * Contributing
+  * Testing
+  * DCO
+  * License
+  * Code of Conduct
+  * Release
+  * Adopters
 
 I also think that Kube-Prometheus should be removed from the docs because:
 * It is a seperate project from Prometheus Operator.
