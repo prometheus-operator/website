@@ -1,4 +1,4 @@
-# Revamping Documentation Structure
+ccd# Revamping Documentation Structure
 
 - Owners:
   - [AshwinSriram11](https://github.com/AshwinSriram11)
@@ -10,7 +10,7 @@ This document proposes restructuring the documentation of the Prometheus-Operato
 
 # Why
 
-It is important to keep the documentation of a project updated with the development process so that all features, enhancements are incorporated in the documentation properly. For that, the basic structure for the documentation should be intuitive so that further additions to the documentation is easier. 
+Restructuring the documentation will help in improving user experience and may save time for a user to search for relevant information effectively. This will encourage a newcomer to get familiar with the project in an efficient manner. The end goal of a good documentation is to follow the industrial best practices and provide accurate information to a user. If the basic structure of a documentation is improved, then further improvements in the future would become easier.
 
 # Pitfalls of the current solution
 
