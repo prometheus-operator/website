@@ -1,4 +1,4 @@
-ccd# Revamping Documentation Structure
+# Revamping Documentation Structure
 
 - Owners:
   - [AshwinSriram11](https://github.com/AshwinSriram11)
