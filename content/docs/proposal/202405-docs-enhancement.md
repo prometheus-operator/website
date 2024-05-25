@@ -50,7 +50,7 @@ Incorporation of new topics is also difficult if the structure is not up to mark
 
 I believe a basic structure for the website should be as given below:
 ### 1. Getting Started
-  * **Introduction** - This section will introduce us to Prometheus-Operator and will talk about goals of this project and the problems that are being solved by this project.
+  * **Introduction** - This section will introduce us to Prometheus-Operator and will talk about goals and the problems that are being solved by this project.
   * **Installation Guide** - This section will contain all the methods of installation of Prometheus-Operator in the production environment.
   * **Compatibility** - This section will provide information about compatibility of Prometheus-Operator with Kubernetes, Prometheus, Alertmanager and Thanos.
   * **Design** - This section will describe the design of Prometheus-Operator focusing on the various custom resource definitions(CRDs) it manages. 
