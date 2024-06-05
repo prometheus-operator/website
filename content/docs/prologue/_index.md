@@ -1,5 +1,5 @@
 ---
-title : "Prologue"
+title: "Prologue"
 description: "Prologue for the Prometheus Operator."
 lead: ""
 date: 2020-10-06T08:48:45+00:00
