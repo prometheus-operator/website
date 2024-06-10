@@ -1,5 +1,5 @@
 ---
-title: "User Guides"
+title: "Beginner Section"
 description: "Prometheus operator and kube-prometheus user guides"
 lead: ""
 draft: false

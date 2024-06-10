@@ -1,5 +1,5 @@
 ---
-title: "Prometheus Operator"
+title: "Advanced Section"
 description: "Help Prometheus Operator."
 lead: ""
 date: 2020-10-06T08:49:15+00:00

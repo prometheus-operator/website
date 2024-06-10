@@ -10,14 +10,14 @@
 /content/adopters.md
 /content/docs/prologue/*
 /content/docs/api-reference/*
-/content/docs/user-guides/*
-/content/docs/operator/*
+/content/docs/beginner/*
+/content/docs/advanced/*
 /content/docs/kube/*
 /content/docs/community/*
 
 !/content/docs/prologue/_index.md
 !/content/docs/api-reference/_index.md
-!/content/docs/user-guide/_index.md
-!/content/docs/operator/_index.md
+!/content/docs/beginner/_index.md
+!/content/docs/advanced/_index.md
 !/content/docs/kube/_index.md
 !/content/docs/community/_index.md

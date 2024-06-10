@@ -28,22 +28,22 @@ cp repos/prometheus-operator/Documentation/design.md content/docs/prologue/desig
 # api section
 cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md
 
-# user guides section
-cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/user-guides/getting-started.md
-cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/user-guides/alerting.md
-cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/user-guides/prometheus-agent.md
-cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/user-guides/scrapeconfig.md
-cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/user-guides/webhook.md
+# beginner section
+cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/beginner/getting-started.md
+cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/beginner/alerting.md
+cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/beginner/prometheus-agent.md
+cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/beginner/scrapeconfig.md
+cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/beginner/webhook.md
 
-# prometheus-operator section
-cp repos/prometheus-operator/Documentation/operator.md content/docs/operator/operator.md
-cp repos/prometheus-operator/Documentation/high-availability.md content/docs/operator/high-availability.md
-cp repos/prometheus-operator/Documentation/rbac-crd.md content/docs/operator/rbac-crd.md
-cp repos/prometheus-operator/Documentation/rbac.md content/docs/operator/rbac.md
-cp repos/prometheus-operator/Documentation/thanos.md content/docs/operator/thanos.md
-cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/operator/troubleshooting.md
-cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/operator/storage.md
-cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/operator/strategic-merge-patch.md
+# advanced section
+cp repos/prometheus-operator/Documentation/operator.md content/docs/advanced/operator.md
+cp repos/prometheus-operator/Documentation/high-availability.md content/docs/advanced/high-availability.md
+cp repos/prometheus-operator/Documentation/rbac-crd.md content/docs/advanced/rbac-crd.md
+cp repos/prometheus-operator/Documentation/rbac.md content/docs/advanced/rbac.md
+cp repos/prometheus-operator/Documentation/thanos.md content/docs/advanced/thanos.md
+cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/advanced/troubleshooting.md
+cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/advanced/storage.md
+cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/advanced/strategic-merge-patch.md
 
 # kube-prometheus section
 cp repos/kube-prometheus/docs/blackbox-exporter.md content/docs/kube/blackbox-exporter.md
