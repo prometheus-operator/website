@@ -9,7 +9,7 @@ if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
   git clone https://github.com/AshwinSriram11/prometheus-operator.git -b docs-restructure --depth 1 repos/prometheus-operator
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
-  ln -s ../../prometheus-operator repos/prometheus-operator
+  ln -s ../../prometheus-operator repos/prometheus-operator 
   ln -s ../../kube-prometheus repos/kube-prometheus
 fi
 
@@ -28,22 +28,22 @@ cp repos/prometheus-operator/Documentation/design.md content/docs/prologue/desig
 # api section
 cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md
 
-# beginner section
-cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/beginner/getting-started.md
-cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/beginner/alerting.md
-cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/beginner/prometheus-agent.md
-cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/beginner/scrapeconfig.md
-cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/beginner/webhook.md
+# developer guide
+cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/developer/getting-started.md
+cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/developer/alerting.md
+cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/developer/scrapeconfig.md
 
-# advanced section
-cp repos/prometheus-operator/Documentation/operator.md content/docs/advanced/operator.md
-cp repos/prometheus-operator/Documentation/high-availability.md content/docs/advanced/high-availability.md
-cp repos/prometheus-operator/Documentation/rbac-crd.md content/docs/advanced/rbac-crd.md
-cp repos/prometheus-operator/Documentation/rbac.md content/docs/advanced/rbac.md
-cp repos/prometheus-operator/Documentation/thanos.md content/docs/advanced/thanos.md
-cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/advanced/troubleshooting.md
-cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/advanced/storage.md
-cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/advanced/strategic-merge-patch.md
+# platform guide
+cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/platform/webhook.md
+cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/platform/prometheus-agent.md
+cp repos/prometheus-operator/Documentation/operator.md content/docs/platform/operator.md
+cp repos/prometheus-operator/Documentation/high-availability.md content/docs/platform/high-availability.md
+cp repos/prometheus-operator/Documentation/rbac-crd.md content/docs/platform/rbac-crd.md
+cp repos/prometheus-operator/Documentation/rbac.md content/docs/platform/rbac.md
+cp repos/prometheus-operator/Documentation/thanos.md content/docs/platform/thanos.md
+cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/platform/troubleshooting.md
+cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/platform/storage.md
+cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
 
 # kube-prometheus section
 cp repos/kube-prometheus/docs/blackbox-exporter.md content/docs/kube/blackbox-exporter.md
@@ -58,6 +58,5 @@ cp repos/kube-prometheus/docs/monitoring-other-namespaces.md content/docs/kube/m
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
 cp repos/prometheus-operator/TESTING.md content/docs/community/testing.md
 cp repos/prometheus-operator/DCO content/docs/community/dco.md
-cp repos/prometheus-operator/LICENSE content/docs/community/license.md
 cp repos/prometheus-operator/code-of-conduct.md content/docs/community/code-of-conduct.md
 cp repos/prometheus-operator/RELEASE.md content/docs/community/release.md
