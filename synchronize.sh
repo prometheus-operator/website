@@ -22,8 +22,8 @@ cp repos/prometheus-operator/ADOPTERS.md content/adopters.md
 cp -r repos/prometheus-operator/Documentation/img static/img
 
 # prologue section
-cp repos/prometheus-operator/Documentation/compatibility.md content/docs/prologue/compatibility.md
-cp repos/prometheus-operator/Documentation/design.md content/docs/prologue/design.md
+cp repos/prometheus-operator/Documentation/compatibility.md content/docs/getting-started/compatibility.md
+cp repos/prometheus-operator/Documentation/design.md content/docs/getting-started/design.md
 
 # api section
 cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md

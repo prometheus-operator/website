@@ -8,14 +8,14 @@
 # Generated content to ignore (sorted alphabetically)
 
 /content/adopters.md
-/content/docs/prologue/*
+/content/docs/getting-started/*
 /content/docs/api-reference/*
 /content/docs/developer/*
 /content/docs/platform/*
 /content/docs/kube/*
 /content/docs/community/*
 
-!/content/docs/prologue/_index.md
+!/content/docs/getting-started/_index.md
 !/content/docs/api-reference/_index.md
 !/content/docs/developer/_index.md
 !/content/docs/platform/_index.md

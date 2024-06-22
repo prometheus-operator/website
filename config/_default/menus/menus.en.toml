@@ -1,14 +1,26 @@
 [[docs]]
-  name = "Prologue"
+  name = "Getting-Started"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
 
 [[docs]]
-  name = "Prometheus Operator"
+  name = "API Reference"
+  weight = 20
+  identifier = "api-reference"
+  url = "/docs/api-reference/"
+
+[[docs]]
+  name = "Developer Guide"
+  weight = 30
+  identifier = "/docs/developer/"
+  url = "/docs/developer/"
+
+[[docs]]
+  name = "Platform Guide"
   weight = 40
-  identifier = "operator"
-  url = "/docs/operator/"
+  identifier = "platform"
+  url = "/docs/platform/"
 
 [[docs]]
   name = "kube-prometheus"
@@ -16,9 +28,15 @@
   identifier = "kube"
   url = "/docs/kube/"
 
+[[docs]]
+  name = "Community"
+  weight = 60
+  identifier = "community"
+  url = "/docs/community/"
+
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/getting-started/introduction/"
   weight = 10
 
 # [[main]]
