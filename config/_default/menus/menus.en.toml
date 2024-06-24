@@ -1,3 +1,8 @@
+[[main]]
+  name = "Docs"
+  weight = 10
+  url = "/docs/getting-started/introduction/"
+
 [[docs]]
   name = "Getting-Started"
   weight = 10
@@ -23,21 +28,22 @@
   url = "/docs/platform/"
 
 [[docs]]
-  name = "kube-prometheus"
-  weight = 50
-  identifier = "kube"
-  url = "/docs/kube/"
-
-[[docs]]
   name = "Community"
-  weight = 60
+  weight = 50
   identifier = "community"
   url = "/docs/community/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/getting-started/introduction/"
+  name = "Kube-Prometheus"
+  weight = 20
+  url = "/kube-prometheus/kube/deploy-kind/"
+
+[[kube-prometheus]]
+  name = "Kube"
   weight = 10
+  identifier = "kube"
+  url = "/kube-prometheus/kube/"
+
 
 # [[main]]
 #   name = "Videos"

@@ -45,18 +45,18 @@ cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/platf
 cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/platform/storage.md
 cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
 
-# kube-prometheus section
-cp repos/kube-prometheus/docs/blackbox-exporter.md content/docs/kube/blackbox-exporter.md
-cp repos/kube-prometheus/docs/deploy-kind.md content/docs/kube/deploy-kind.md
-cp repos/kube-prometheus/docs/customizations/developing-prometheus-rules-and-grafana-dashboards.md content/docs/kube/developing-prometheus-rules-and-grafana-dashboards.md
-cp repos/kube-prometheus/docs/customizations/exposing-prometheus-alertmanager-grafana-ingress.md content/docs/kube/exposing-prometheus-alertmanager-grafana-ingress.md
-cp repos/kube-prometheus/docs/kube-prometheus-on-kubeadm.md content/docs/kube/kube-prometheus-on-kubeadm.md
-cp repos/kube-prometheus/docs/monitoring-external-etcd.md content/docs/kube/monitoring-external-etcd.md
-cp repos/kube-prometheus/docs/monitoring-other-namespaces.md content/docs/kube/monitoring-other-namespaces.md
-
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
 cp repos/prometheus-operator/TESTING.md content/docs/community/testing.md
 cp repos/prometheus-operator/DCO content/docs/community/dco.md
 cp repos/prometheus-operator/code-of-conduct.md content/docs/community/code-of-conduct.md
 cp repos/prometheus-operator/RELEASE.md content/docs/community/release.md
+
+# kube-prometheus docs
+cp repos/kube-prometheus/docs/blackbox-exporter.md content/kube-prometheus/kube/blackbox-exporter.md
+cp repos/kube-prometheus/docs/deploy-kind.md content/kube-prometheus/kube/deploy-kind.md
+cp repos/kube-prometheus/docs/customizations/developing-prometheus-rules-and-grafana-dashboards.md content/kube-prometheus/kube/developing-prometheus-rules-and-grafana-dashboards.md
+cp repos/kube-prometheus/docs/customizations/exposing-prometheus-alertmanager-grafana-ingress.md content/kube-prometheus/kube/exposing-prometheus-alertmanager-grafana-ingress.md
+cp repos/kube-prometheus/docs/kube-prometheus-on-kubeadm.md content/kube-prometheus/kube/kube-prometheus-on-kubeadm.md
+cp repos/kube-prometheus/docs/monitoring-external-etcd.md content/kube-prometheus/kube/monitoring-external-etcd.md
+cp repos/kube-prometheus/docs/monitoring-other-namespaces.md content/kube-prometheus/kube/monitoring-other-namespaces.md

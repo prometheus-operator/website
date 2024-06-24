@@ -12,12 +12,12 @@
 /content/docs/api-reference/*
 /content/docs/developer/*
 /content/docs/platform/*
-/content/docs/kube/*
 /content/docs/community/*
+/content/kube-prometheus/kube/*
 
 !/content/docs/getting-started/_index.md
 !/content/docs/api-reference/_index.md
 !/content/docs/developer/_index.md
 !/content/docs/platform/_index.md
-!/content/docs/kube/_index.md
 !/content/docs/community/_index.md
+/content/kube-prometheus/kube/_index.md
