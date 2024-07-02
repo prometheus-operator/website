@@ -1,8 +1,8 @@
 ---
-title: "User Guides"
+title: "Developer Guide"
 description: "Prometheus operator and kube-prometheus user guides"
 lead: ""
 draft: false
 images: []
-weight: 150
+weight: 200
 ---

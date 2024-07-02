@@ -1,25 +1,49 @@
-[[docs]]
-  name = "Prologue"
-  weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
-
-[[docs]]
-  name = "Prometheus Operator"
-  weight = 40
-  identifier = "operator"
-  url = "/docs/operator/"
-
-[[docs]]
-  name = "kube-prometheus"
-  weight = 50
-  identifier = "kube"
-  url = "/docs/kube/"
-
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
   weight = 10
+  url = "/docs/getting-started/introduction/"
+
+[[docs]]
+  name = "Getting-Started"
+  weight = 10
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
+
+[[docs]]
+  name = "API Reference"
+  weight = 20
+  identifier = "api-reference"
+  url = "/docs/api-reference/"
+
+[[docs]]
+  name = "Developer Guide"
+  weight = 30
+  identifier = "/docs/developer/"
+  url = "/docs/developer/"
+
+[[docs]]
+  name = "Platform Guide"
+  weight = 40
+  identifier = "platform"
+  url = "/docs/platform/"
+
+[[docs]]
+  name = "Community"
+  weight = 50
+  identifier = "community"
+  url = "/docs/community/"
+
+[[main]]
+  name = "Kube-Prometheus"
+  weight = 20
+  url = "/kube-prometheus/kube/deploy-kind/"
+
+[[kube-prometheus]]
+  name = "Kube"
+  weight = 10
+  identifier = "kube"
+  url = "/kube-prometheus/kube/"
+
 
 # [[main]]
 #   name = "Videos"

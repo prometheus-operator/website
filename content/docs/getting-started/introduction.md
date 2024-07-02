@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "prologue"
-weight: 100
+weight: 101
 toc: true
 ---
 
@@ -18,9 +18,9 @@ The purpose of this project is to simplify and automate the configuration of a P
 
 The Prometheus operator includes, but is not limited to, the following features:
 
-* Kubernetes Custom Resources: Use Kubernetes custom resources to deploy and manage Prometheus, Alertmanager, and related components.
-* Simplified Deployment Configuration: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
-* Prometheus Target Configuration: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific configuration language.
+- Kubernetes Custom Resources: Use Kubernetes custom resources to deploy and manage Prometheus, Alertmanager, and related components.
+- Simplified Deployment Configuration: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
+- Prometheus Target Configuration: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific configuration language.
 
 ## Get started
 
