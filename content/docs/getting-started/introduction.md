@@ -40,14 +40,14 @@ The Prometheus operator includes, but is not limited to, the following features:
 {{<link-card
   title="Developer Guide"
   href="https://prometheus-operator.dev/docs/developer/getting-started/"
-  description="Learn how to configure monitoring for your applications."
+  description="Learn how to configure scraping, alerting, and recording rules for your applications."
 >}}
 
 <!-- Platform Guide -->
 {{<link-card
   title="Platform Guide"
   href="https://prometheus-operator.dev/docs/platform/webhook/"
-  description="Set up, configure and manage instances of Prometheus and related resources."
+  description="Set up, configure and manage instances of Prometheus-Operator, Prometheus, Alertmanager and ThanosRuler resources."
 >}}
 
 <!-- Community -->
