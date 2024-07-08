@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
+    parent: "getting-started"
 weight: 101
 toc: true
 ---
@@ -35,7 +35,7 @@ Feel free to [comment on the opened issue](https://github.com/prometheus-operato
 
 {{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
 
-One page summary of how to start with the Prometheus Operator and kube-prometheus. [Quick Start →]({{< ref "quick-start" >}})
+One page summary of how to start with the Prometheus Operator and kube-prometheus. [Quick Start →]({{< ref "installation" >}})
 
 ## Go further
 
