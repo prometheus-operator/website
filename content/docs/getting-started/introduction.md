@@ -13,14 +13,43 @@ weight: 101
 toc: true
 ---
 
-The Prometheus Operator provides [Kubernetes](https://kubernetes.io/) native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components.
-The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters.
+Prometheus Operator is a [Kubernetes Operator](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md#foundation) that provides Kubernetes native deployment and management of [Prometheus](https://prometheus.io/) and related monitoring components. 
 
 The Prometheus operator includes, but is not limited to, the following features:
 
-- Kubernetes Custom Resources: Use Kubernetes custom resources to deploy and manage Prometheus, Alertmanager, and related components.
-- Simplified Deployment Configuration: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
-- Prometheus Target Configuration: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific configuration language.
+- **Kubernetes Custom Resources**: Use Kubernetes custom resources to deploy and manage Prometheus, Alertmanager, and related components.
+
+- **Simplified Deployment Configuration**: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
+
+- **Prometheus Target Configuration**: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific configuration language.
+
+Prometheus Operator provides a set of Custom Resource Definitions(CRDs) that allows you to configure your Prometheus and related instances. Currently, these are the CRDs provided by Prometheus Operator : 
+
+- Prometheus
+- Alertmanager
+- ThanosRuler
+- ServiceMonitor
+- PodMonitor
+- Probe
+- PrometheusRule
+- AlertmanagerConfig
+- PrometheusAgent
+- ScrapeConfig
+
+> Check the [Design]({{<ref "design">}}) page for an overview of all the resources provided by Prometheus Operator.
+
+### Goals
+
+- To significantly reduce the effort required to configure, implement and manage all components of Prometheus based monitoring stack.
+
+- Automate the management of Prometheus monitoring targets, ultimately increasing efficiency.
+
+
+### Next Steps
+
+By now, you have the basic idea about Prometheus Operator!!
+
+Take a look at these guides to get into action with Prometheus Operator.
 
 <!-- Getting-Started -->
 {{<link-card
