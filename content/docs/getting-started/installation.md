@@ -11,14 +11,14 @@ weight: 102
 toc: true
 ---
 
-We offer few approaches to install Prometheus Operator in your Kubernetes cluster:
+There are different approaches to install Prometheus Operator in your Kubernetes cluster:
 
 - [Install using YAML files](#install-using-yaml-files)
 - [Install using Kube-Prometheus](#install-using-kube-prometheus)
 
 ### Pre-requisites
 
-For all the approaches that are listed on this page, all you will need is access to a **Kubernetes cluster with kubectl!!** For this, you can check the official docs of Kubernetes [here](https://kubernetes.io/docs/tasks/tools/)
+For all the approaches listed on this page, you require access to a **Kubernetes cluster!** For this, you can check the official docs of Kubernetes available [here](https://kubernetes.io/docs/tasks/tools/).
 
 Version `>=0.39.0` of the Prometheus Operator requires a Kubernetes
 cluster of version `>=1.16.0`. If you are just starting out with the
@@ -86,7 +86,7 @@ But it may be necessary to run the command multiple times for all components to 
 
 > Note: For versions before Kubernetes v1.20.z refer to the [Kubernetes compatibility matrix](https://github.com/prometheus-operator/kube-prometheus#kubernetes-compatibility-matrix) in order to choose a compatible branch.
 
-> Note: If you used Kube-Prometheus as the installation method, we would recommend you to follow this page to learn how to access the resources provided.
+> Note: If you used Kube-Prometheus as the installation method, we would recommend you to follow this [page](http://prometheus-operator.dev/kube-prometheus/kube/access-ui/) to learn how to access the resources provided.
 
 {{<alert icon="👉" text="If you used Kube-Prometheus as the installation method, we would recommend you to follow this page to learn how to access the resources provided." />}}
 

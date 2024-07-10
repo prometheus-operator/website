@@ -7,7 +7,8 @@ mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
   git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
-  git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
+  # git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
+  git clone https://github.com/AshwinSriram11/kube-prometheus -b main repos/kube-prometheus
 else
   ln -s ../../prometheus-operator repos/prometheus-operator 
   ln -s ../../kube-prometheus repos/kube-prometheus
@@ -53,6 +54,7 @@ cp repos/prometheus-operator/code-of-conduct.md content/docs/community/code-of-c
 cp repos/prometheus-operator/RELEASE.md content/docs/community/release.md
 
 # kube-prometheus docs
+cp repos/kube-prometheus/docs/access-ui.md content/kube-prometheus/kube/access-ui.md
 cp repos/kube-prometheus/docs/blackbox-exporter.md content/kube-prometheus/kube/blackbox-exporter.md
 cp repos/kube-prometheus/docs/deploy-kind.md content/kube-prometheus/kube/deploy-kind.md
 cp repos/kube-prometheus/docs/customizations/developing-prometheus-rules-and-grafana-dashboards.md content/kube-prometheus/kube/developing-prometheus-rules-and-grafana-dashboards.md
