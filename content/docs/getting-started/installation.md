@@ -15,6 +15,7 @@ There are different approaches to install Prometheus Operator in your Kubernetes
 
 - [Install using YAML files](#install-using-yaml-files)
 - [Install using Kube-Prometheus](#install-using-kube-prometheus)
+- [Install using Helm Chart](#install-using-helm-chart)
 
 ### Pre-requisites
 
@@ -97,3 +98,11 @@ If you're done experimenting with kube-prometheus and the Prometheus Operator yo
 ```shell
 kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
 ```
+### Install Using Helm Chart
+
+Install the [Kube-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) helm chart which provides a collection of Kubernetes manifests, [Grafana](https://grafana.com/) dashboards, and [Prometheus rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with [Prometheus](https://prometheus.io/) using the Prometheus Operator.
+
+To see more details, please check the [chart's README](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack#kube-prometheus-stack).
+
+> This helm chart is no longer part of Prometheus-Operator and is now maintained by [Prometheus Community Helm Charts](https://github.com/prometheus-community/helm-charts).
+
