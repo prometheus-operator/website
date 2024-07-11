@@ -22,32 +22,37 @@ The Prometheus operator includes, but is not limited to, the following features:
 - Simplified Deployment Configuration: Configure the fundamentals of Prometheus like versions, persistence, retention policies, and replicas from a native Kubernetes resource.
 - Prometheus Target Configuration: Automatically generate monitoring target configurations based on familiar Kubernetes label queries; no need to learn a Prometheus specific configuration language.
 
-## Get started
+<!-- Getting-Started -->
+{{<link-card
+  title="Getting-Started"
+  href="https://prometheus-operator.dev/docs/getting-started/introduction/"
+  description="Get started with Prometheus-Operator."
+>}}
 
-### Tutorial
+<!-- API -->
+{{<link-card
+  title="API Reference"
+  href="https://prometheus-operator.dev/docs/api-reference/api/"
+  description="Reference for different fields of Custom Resources in Prometheus-Operator."
+>}}
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+<!-- Developer Guide -->
+{{<link-card
+  title="Developer Guide"
+  href="https://prometheus-operator.dev/docs/developer/getting-started/"
+  description="Learn how to configure scraping, alerting, and recording rules for your applications."
+>}}
 
-We still need to write you a proper tutorial...
-Feel free to [comment on the opened issue](https://github.com/prometheus-operator/website/issues/3) if you want to help!
+<!-- Platform Guide -->
+{{<link-card
+  title="Platform Guide"
+  href="https://prometheus-operator.dev/docs/platform/webhook/"
+  description="Set up, configure and manage instances of Prometheus-Operator, Prometheus, Alertmanager and ThanosRuler resources."
+>}}
 
-### Quick Start
-
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
-
-One page summary of how to start with the Prometheus Operator and kube-prometheus. [Quick Start →]({{< ref "installation" >}})
-
-## Go further
-
-Recipes, Reference Guides, Extensions, and Showcase.
-
-## Contributing
-
-Find out how to contribute to the Prometheus Operator and kube-prometheus. [Contributing →]({{< ref "contributing" >}})
-
-## Support
-
-We have [GitHub Discussions](https://github.com/prometheus-operator/kube-prometheus/discussions) for kube-prometheus.
-We recommend asking questions there, as this is searchable compared to Slack.
-
-We're happy to talk to you on the [Kubernetes Slack](http://slack.k8s.io/) in #prometheus-operator!
+<!-- Community -->
+{{<link-card
+  title="Community"
+  href="https://prometheus-operator.dev/docs/community/contributing/"
+  description="Join and interact with Prometheus-Operator community."
+>}}
