@@ -36,7 +36,7 @@
 [[main]]
   name = "Kube-Prometheus"
   weight = 20
-  url = "/kube-prometheus/kube/deploy-kind/"
+  url = "/kube-prometheus/kube/access-ui/"
 
 [[kube-prometheus]]
   name = "Kube"

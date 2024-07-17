@@ -53,6 +53,7 @@ cp repos/prometheus-operator/code-of-conduct.md content/docs/community/code-of-c
 cp repos/prometheus-operator/RELEASE.md content/docs/community/release.md
 
 # kube-prometheus docs
+cp repos/kube-prometheus/docs/access-ui.md content/kube-prometheus/kube/access-ui.md
 cp repos/kube-prometheus/docs/blackbox-exporter.md content/kube-prometheus/kube/blackbox-exporter.md
 cp repos/kube-prometheus/docs/deploy-kind.md content/kube-prometheus/kube/deploy-kind.md
 cp repos/kube-prometheus/docs/customizations/developing-prometheus-rules-and-grafana-dashboards.md content/kube-prometheus/kube/developing-prometheus-rules-and-grafana-dashboards.md
