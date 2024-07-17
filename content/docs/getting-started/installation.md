@@ -89,8 +89,6 @@ But it may be necessary to run the command multiple times for all components to 
 
 > Note: If you used Kube-Prometheus as the installation method, we would recommend you to follow this [page](http://prometheus-operator.dev/kube-prometheus/kube/access-ui/) to learn how to access the resources provided.
 
-{{<alert icon="👉" text="If you used Kube-Prometheus as the installation method, we would recommend you to follow this page to learn how to access the resources provided." />}}
-
 ### Remove Kube-Prometheus
 
 If you're done experimenting with kube-prometheus and the Prometheus Operator you can simply teardown the deployment by running:
