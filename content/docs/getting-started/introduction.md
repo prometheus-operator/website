@@ -46,7 +46,7 @@ Prometheus Operator provides a set of Custom Resource Definitions(CRDs) that all
 
 - **Configuration Abstraction and Validation** - Instead of learning and manually writing Prometheus Relabeling rules (which can be time consuming), you can simply use Kubernetes [Label Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors). `ServiceMonitor`, `PodMonitor` and `Probe` custom resources provide this abstraction. The Operator also removes the complexity of validating the configuration of `AlertmanagerConfig` and `PrometheusRule` objects.
 
-- **Scaling** - There are many scaling-related features provided by the Operator like [ThanosRuler](https://prometheus-operator.dev/docs/platform/thanos/#thanos-ruler) custom resource for rule evaluation, workload distribution acroos multiple Prometheus instances using scrape target sharding, and running [Thanos sidecar](https://thanos.io/v0.4/components/sidecar/) in Prometheus instance for long-term storage.
+- **Scaling** - There are many scaling-related features provided by the Operator like [ThanosRuler](https://prometheus-operator.dev/docs/platform/thanos/#thanos-ruler) custom resource for rule evaluation, workload distribution across multiple Prometheus instances using scrape target sharding, and running [Thanos sidecar](https://thanos.io/v0.4/components/sidecar/) in Prometheus instance for long-term storage.
 
 ### Next Steps
 
