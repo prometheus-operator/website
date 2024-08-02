@@ -20,7 +20,7 @@ done
 
 # main section + images
 cp repos/prometheus-operator/ADOPTERS.md content/adopters.md
-cp -r repos/prometheus-operator/Documentation/img/* static/img
+cp -r repos/prometheus-operator/Documentation/img static/img
 
 # getting-started section
 cp repos/prometheus-operator/Documentation/compatibility.md content/docs/getting-started/compatibility.md
