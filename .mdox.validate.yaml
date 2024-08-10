@@ -1,0 +1,22 @@
+version: 1
+timeout: "1m"
+
+validators:
+  # ignore yaml code blocks
+  - regex: '```yaml mdox-exec="[^"]*"\n[\s\S]*?```'
+    type: "ignore"
+  #  TD
+  - regex: '{{<[\s\S]*?>}}'
+    type: "ignore"
+  # docs.github.com returns 403 if not in browser. Cannot curl as well.
+  - regex: 'docs\.github\.com'
+    type: "ignore"
+  # Cloudflare protection, so returns 503 if not in browser. Cannot curl as well.
+  - regex: 'wise\.com'
+    type: "ignore"
+  # Adopters example link.
+  - regex: "our-link"
+    type: "ignore"
+  # 301 errors even when curl-ed.
+  - regex: "envoyproxy"
+    type: "ignore"
