@@ -4,5 +4,5 @@ description: "Prometheus operator and kube-prometheus user guides"
 lead: ""
 draft: false
 images: []
-weight: 200
+weight: 250
 ---

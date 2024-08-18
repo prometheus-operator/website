@@ -68,18 +68,18 @@ Take a look at these guides to get into action with Prometheus Operator.
   description="Reference for different fields of Custom Resources in Prometheus-Operator."
 >}}
 
-<!-- Developer Guide -->
-{{<link-card
-  title="Developer Guide"
-  href="https://prometheus-operator.dev/docs/developer/getting-started/"
-  description="Learn how to configure scraping, alerting, and recording rules for your applications."
->}}
-
 <!-- Platform Guide -->
 {{<link-card
   title="Platform Guide"
   href="https://prometheus-operator.dev/docs/platform/webhook/"
   description="Set up, configure and manage instances of Prometheus-Operator, Prometheus, Alertmanager and ThanosRuler resources."
+>}}
+
+<!-- Developer Guide -->
+{{<link-card
+  title="Developer Guide"
+  href="https://prometheus-operator.dev/docs/developer/getting-started/"
+  description="Learn how to configure scraping, alerting, and recording rules for your applications."
 >}}
 
 <!-- Community -->
