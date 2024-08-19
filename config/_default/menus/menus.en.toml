@@ -16,16 +16,16 @@
   url = "/docs/api-reference/"
 
 [[docs]]
-  name = "Developer Guide"
-  weight = 30
-  identifier = "/docs/developer/"
-  url = "/docs/developer/"
-
-[[docs]]
   name = "Platform Guide"
-  weight = 40
+  weight = 30
   identifier = "platform"
   url = "/docs/platform/"
+
+[[docs]]
+  name = "Developer Guide"
+  weight = 40
+  identifier = "/docs/developer/"
+  url = "/docs/developer/"
 
 [[docs]]
   name = "Community"

@@ -6,7 +6,8 @@ rm -rf repos/
 mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
-  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  # git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  git clone https://github.com/AshwinSriram11/prometheus-operator -b Reorder-Guides repos/prometheus-operator
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
   ln -s ../../prometheus-operator repos/prometheus-operator 
@@ -28,11 +29,6 @@ cp repos/prometheus-operator/Documentation/design.md content/docs/getting-starte
 # api section
 cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md
 
-# developer guide
-cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/developer/getting-started.md
-cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/developer/alerting.md
-cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/developer/scrapeconfig.md
-
 # platform guide
 cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/platform/webhook.md
 cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/platform/prometheus-agent.md
@@ -44,6 +40,11 @@ cp repos/prometheus-operator/Documentation/thanos.md content/docs/platform/thano
 cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/platform/troubleshooting.md
 cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/platform/storage.md
 cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
+
+# developer guide
+cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/developer/getting-started.md
+cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/developer/alerting.md
+cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/developer/scrapeconfig.md
 
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
