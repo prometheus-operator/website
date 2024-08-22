@@ -8,14 +8,14 @@
 # Generated content to ignore (sorted alphabetically)
 
 /content/adopters.md
-/content/docs/getting-started/compatibility.md
-/content/docs/getting-started/design.md
+/content/docs/getting-started/*
 /content/docs/api-reference/*
 /content/docs/developer/*
 /content/docs/platform/*
 /content/docs/community/*
 /content/kube-prometheus/kube/*
 
+!/content/docs/getting-started/_index.md
 !/content/docs/api-reference/_index.md
 !/content/docs/developer/_index.md
 !/content/docs/platform/_index.md

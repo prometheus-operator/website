@@ -1,14 +1,14 @@
 ---
-title: "Installing Prometheus Operator"
-description: "Installation guide listing all the installation methods of Prometheus Operator."
-date: 2020-11-16T13:59:39+01:00
-draft: false
-images: []
-menu:
-  docs:
-    parent: "getting-started"
 weight: 102
 toc: true
+title: Installing Prometheus Operator
+menu:
+    docs:
+        parent: getting-started
+images: []
+draft: false
+description: Installation guide listing all the installation methods of Prometheus Operator.
+date: "2020-11-16T13:59:39+01:00"
 ---
 
 There are different approaches to install Prometheus Operator in your Kubernetes cluster:
@@ -21,18 +21,13 @@ There are different approaches to install Prometheus Operator in your Kubernetes
 
 For all the approaches listed on this page, you require access to a **Kubernetes cluster!** For this, you can check the official docs of Kubernetes available [here](https://kubernetes.io/docs/tasks/tools/).
 
-Version `>=0.39.0` of the Prometheus Operator requires a Kubernetes
-cluster of version `>=1.16.0`. If you are just starting out with the
-Prometheus Operator, it is **highly recommended** to use the latest version. If 
-you have an older version of Kubernetes and the Prometheus Operator running, 
-we recommend upgrading Kubernetes first and then the Prometheus Operator.
+Version `>=0.39.0` of the Prometheus Operator requires a Kubernetes cluster of version `>=1.16.0`. If you are just starting out with the Prometheus Operator, it is **highly recommended** to use the latest version. If you have an older version of Kubernetes and the Prometheus Operator running, we recommend upgrading Kubernetes first and then the Prometheus Operator.
 
 > Check the appropriate versions of each of the components in the [Compatibility]({{<ref "compatibility">}}) page.
 
 ### Install using YAML files
 
-The first step is to install the operator's Custom Resource Definitions (CRDs) as well
-as the operator itself with the required RBAC resources.
+The first step is to install the operator's Custom Resource Definitions (CRDs) as well as the operator itself with the required RBAC resources.
 
 Run the following commands to install the CRDs and deploy the operator in the `default` namespace:
 
@@ -49,8 +44,7 @@ kubectl wait --for=condition=Ready pods -l  app.kubernetes.io/name=prometheus-op
 
 ### Install using Kube-Prometheus
 
-The easiest way of starting with the Prometheus Operator is by deploying it as part of kube-prometheus.
-kube-prometheus deploys the Prometheus Operator and already schedules a Prometheus called `prometheus-k8s` with alerts and rules by default.
+The easiest way of starting with the Prometheus Operator is by deploying it as part of kube-prometheus. kube-prometheus deploys the Prometheus Operator and already schedules a Prometheus called `prometheus-k8s` with alerts and rules by default.
 
 We are going to deploy a compiled version of the Kubernetes [manifests](https://github.com/prometheus-operator/kube-prometheus/tree/main/manifests).
 
@@ -76,8 +70,7 @@ until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; 
 kubectl create -f manifests/
 ```
 
-We create the namespace and CustomResourceDefinitions first to avoid race conditions when deploying the monitoring components.
-Alternatively, the resources in both folders can be applied with a single command:
+We create the namespace and CustomResourceDefinitions first to avoid race conditions when deploying the monitoring components. Alternatively, the resources in both folders can be applied with a single command:
 
 ```
 kubectl create -f manifests/setup -f manifests
@@ -96,6 +89,7 @@ If you're done experimenting with kube-prometheus and the Prometheus Operator yo
 ```shell
 kubectl delete --ignore-not-found=true -f manifests/ -f manifests/setup
 ```
+
 ### Install Using Helm Chart
 
 Install the [Kube-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) helm chart which provides a collection of Kubernetes manifests, [Grafana](https://grafana.com/) dashboards, and [Prometheus rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/) combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with [Prometheus](https://prometheus.io/) using the Prometheus Operator.
@@ -103,4 +97,3 @@ Install the [Kube-Prometheus-Stack](https://github.com/prometheus-community/helm
 To see more details, please check the [chart's README](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack#kube-prometheus-stack).
 
 > This helm chart is no longer part of Prometheus-Operator and is now maintained by [Prometheus Community Helm Charts](https://github.com/prometheus-community/helm-charts).
-
