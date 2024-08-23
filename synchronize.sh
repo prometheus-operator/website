@@ -22,6 +22,8 @@ cp repos/prometheus-operator/ADOPTERS.md content/adopters.md
 cp -r repos/prometheus-operator/Documentation/img static/img
 
 # getting-started section
+cp repos/prometheus-operator/Documentation/introduction.md content/docs/getting-started/introduction.md
+cp repos/prometheus-operator/Documentation/installation.md content/docs/getting-started/installation.md
 cp repos/prometheus-operator/Documentation/compatibility.md content/docs/getting-started/compatibility.md
 cp repos/prometheus-operator/Documentation/design.md content/docs/getting-started/design.md
 
