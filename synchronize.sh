@@ -10,6 +10,7 @@ if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
   git clone https://github.com/AshwinSriram11/prometheus-operator -b platform-getting-started repos/prometheus-operator
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
+  ln -s ../../prometheus-operator repos/prometheus-operator 
   ln -s ../../kube-prometheus repos/kube-prometheus
 fi
 
