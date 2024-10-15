@@ -31,7 +31,7 @@ cp repos/prometheus-operator/Documentation/design.md content/docs/getting-starte
 cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md
 
 # platform guide
-cp repos/prometheus-operator/Documentation/getting-started.md content/docs/platform/getting-started.md
+cp repos/prometheus-operator/Documentation/platform-guide.md content/docs/platform/platform-guide.md
 cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/platform/webhook.md
 cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/platform/prometheus-agent.md
 cp repos/prometheus-operator/Documentation/operator.md content/docs/platform/operator.md
