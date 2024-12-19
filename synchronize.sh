@@ -6,7 +6,8 @@ rm -rf repos/
 mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
-  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  git clone https://github.com/Dharma-09/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  # git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
   ln -s ../../prometheus-operator repos/prometheus-operator 
@@ -32,6 +33,7 @@ cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api
 
 # platform guide
 cp repos/prometheus-operator/Documentation/platform-guide.md content/docs/platform/platform-guide.md
+cp repos/prometheus-operator/Documentation/user-guides/exposing-prometheus-and-alertmanager.md content/docs/platform/exposing-prometheus-and-alertmanager.md
 cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/platform/webhook.md
 cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/platform/prometheus-agent.md
 cp repos/prometheus-operator/Documentation/operator.md content/docs/platform/operator.md
