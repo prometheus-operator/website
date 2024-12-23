@@ -23,13 +23,13 @@ cp repos/prometheus-operator/ADOPTERS.md content/adopters.md
 cp -r repos/prometheus-operator/Documentation/img static/img
 
 # getting-started section
-cp repos/prometheus-operator/Documentation/introduction.md content/docs/getting-started/introduction.md
-cp repos/prometheus-operator/Documentation/installation.md content/docs/getting-started/installation.md
-cp repos/prometheus-operator/Documentation/compatibility.md content/docs/getting-started/compatibility.md
-cp repos/prometheus-operator/Documentation/design.md content/docs/getting-started/design.md
+cp repos/prometheus-operator/Documentation/getting-started/introduction.md content/docs/getting-started/introduction.md
+cp repos/prometheus-operator/Documentation/getting-started/installation.md content/docs/getting-started/installation.md
+cp repos/prometheus-operator/Documentation/getting-started/compatibility.md content/docs/getting-started/compatibility.md
+cp repos/prometheus-operator/Documentation/getting-started/design.md content/docs/getting-started/design.md
 
 # api section
-cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api.md
+cp repos/prometheus-operator/Documentation/api-reference/api.md content/docs/api-reference/api.md
 
 # platform guide
 cp repos/prometheus-operator/Documentation/platform/platform-guide.md content/docs/platform/platform-guide.md
@@ -46,9 +46,9 @@ cp repos/prometheus-operator/Documentation/platform/storage.md content/docs/plat
 cp repos/prometheus-operator/Documentation/platform/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
 
 # developer guide
-cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/developer/getting-started.md
-cp repos/prometheus-operator/Documentation/user-guides/alerting.md content/docs/developer/alerting.md
-cp repos/prometheus-operator/Documentation/user-guides/scrapeconfig.md content/docs/developer/scrapeconfig.md
+cp repos/prometheus-operator/Documentation/developer/getting-started.md content/docs/developer/getting-started.md
+cp repos/prometheus-operator/Documentation/developer/alerting.md content/docs/developer/alerting.md
+cp repos/prometheus-operator/Documentation/developer/scrapeconfig.md content/docs/developer/scrapeconfig.md
 
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
