@@ -43,6 +43,7 @@ cp repos/prometheus-operator/Documentation/thanos.md content/docs/platform/thano
 cp repos/prometheus-operator/Documentation/troubleshooting.md content/docs/platform/troubleshooting.md
 cp repos/prometheus-operator/Documentation/user-guides/storage.md content/docs/platform/storage.md
 cp repos/prometheus-operator/Documentation/user-guides/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
+cp repos/prometheus-operator/Documentation/user-guides/exposing-prometheus-and-alertmanager.md content/docs/platform-guides/exposing-prometheus-and-alertmanager.md
 
 # developer guide
 cp repos/prometheus-operator/Documentation/user-guides/getting-started.md content/docs/developer/getting-started.md
