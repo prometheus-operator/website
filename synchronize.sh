@@ -32,6 +32,7 @@ cp repos/prometheus-operator/Documentation/api.md content/docs/api-reference/api
 
 # platform guide
 cp repos/prometheus-operator/Documentation/platform-guide.md content/docs/platform/platform-guide.md
+cp repos/prometheus-operator/Documentation/user-guides/exposing-prometheus-and-alertmanager.md content/docs/platform/exposing-prometheus-and-alertmanager.md
 cp repos/prometheus-operator/Documentation/user-guides/webhook.md content/docs/platform/webhook.md
 cp repos/prometheus-operator/Documentation/user-guides/prometheus-agent.md content/docs/platform/prometheus-agent.md
 cp repos/prometheus-operator/Documentation/operator.md content/docs/platform/operator.md
