@@ -6,7 +6,8 @@ rm -rf repos/
 mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
-  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  # git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  git clone https://github.com/AshwinSriram11/prometheus-operator -b scrapeclass --depth l repos/prometheus-operator
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
   ln -s ../../prometheus-operator repos/prometheus-operator 
@@ -48,6 +49,7 @@ cp repos/prometheus-operator/Documentation/platform/strategic-merge-patch.md con
 cp repos/prometheus-operator/Documentation/developer/getting-started.md content/docs/developer/getting-started.md
 cp repos/prometheus-operator/Documentation/developer/alerting.md content/docs/developer/alerting.md
 cp repos/prometheus-operator/Documentation/developer/scrapeconfig.md content/docs/developer/scrapeconfig.md
+cp repos/prometheus-operator/Documentation/developer/scrapeclass.md content/docs/developer/scrapeclass.md
 
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
