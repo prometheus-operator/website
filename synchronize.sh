@@ -48,6 +48,7 @@ cp repos/prometheus-operator/Documentation/platform/strategic-merge-patch.md con
 cp repos/prometheus-operator/Documentation/developer/getting-started.md content/docs/developer/getting-started.md
 cp repos/prometheus-operator/Documentation/developer/alerting.md content/docs/developer/alerting.md
 cp repos/prometheus-operator/Documentation/developer/scrapeconfig.md content/docs/developer/scrapeconfig.md
+cp repos/prometheus-operator/Documentation/developer/scrapeclass.md content/docs/developer/scrapeclass.md
 
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
