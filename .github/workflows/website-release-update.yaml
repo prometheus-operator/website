@@ -2,7 +2,8 @@ name: Check and Update Release Version
 
 on:
   schedule:
-    - cron:   '0 12 * * *' #Every day 12:00
+    - cron:   '11 5 * * *' #Every day 05:11AM UTC
+  workflow dispatch:
 
 jobs:
   check-and-update-release-version:
@@ -53,7 +54,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
+          base: test-wrokflow  #Testing in this branch before making changes to main
           head: update-version
           title: "chore: bump to ${{ steps.get_latest_release.outputs.latest_release }}"
           body: "This PR updates the release version in prometheusOperator.json file to the latest version: ${{ steps.get_latest_release.outputs.latest_release }}"rhobs/create-pull-request@v3
