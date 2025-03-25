@@ -3,7 +3,7 @@ name: Check and Update Release Version
 on:
   schedule:
     - cron:   '11 5 * * *' #Every day 05:11AM UTC
-  workflow dispatch:
+  workflow_dispatch:
 
 jobs:
   check-and-update-release-version:
@@ -27,7 +27,7 @@ jobs:
           CURRENT_VERSION=$(jq -r '.version' $JSON_FILE)
           echo "Current version: $CURRENT_VERSION"
 
-          if ["$CURRENT_VERSION" == "${{ steps.get_latest_release.outputs.latest_release }}"]; then
+          if [ "$CURRENT_VERSION" == "${{ steps.get_latest_release.outputs.latest_release }}" ]; then
             echo "Latest version. No updates needed"
             echo "update_needed=false" >> "$GITHUB_ENV"
           else
@@ -42,12 +42,12 @@ jobs:
 
           jq -i --arg version "$NEW_VERSION" '.version = $version' $JSON_FILE
 
-          git config --global user.name 'github-actions[bot]''
+          git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
           git checkout -b update-version
           git add $JSON_FILE
-          git commit -m "chore: bump to $JSON_FILE"
+          git commit -m "chore: bump to $NEW_VERSION"
           git push origin update-version
       - name: Create Pull Request
         if: env.update_needed == 'true'
@@ -57,4 +57,4 @@ jobs:
           base: test-wrokflow  #Testing in this branch before making changes to main
           head: update-version
           title: "chore: bump to ${{ steps.get_latest_release.outputs.latest_release }}"
-          body: "This PR updates the release version in prometheusOperator.json file to the latest version: ${{ steps.get_latest_release.outputs.latest_release }}"rhobs/create-pull-request@v3
+          body: "This PR updates the release version in prometheusOperator.json file to the latest version: ${{ steps.get_latest_release.outputs.latest_release }}"
