@@ -16,7 +16,7 @@ jobs:
         id: get_latest_release
         run: |
           LATEST_RELEASE=$(curl --fail --silent "https://api.github.com/repos/prometheus-operator/prometheus-operator/releases/latest" | jq -r '.tag_name')
-          if ["$LATEST_RELEASE" == "" ]; then
+          if [ "$LATEST_RELEASE" == "" ]; then
               echo "latest-release is invalid" >> "$GITHUB_OUTPUT"
               exit 1
           fi
@@ -57,4 +57,4 @@ jobs:
           base: test-wrokflow  #Testing in this branch before making changes to main
           head: update-version
           title: "chore: bump to ${{ steps.get_latest_release.outputs.latest_release }}"
-          body: "This PR updates the release version in prometheusOperator.json file to the latest version: ${{ steps.get_latest_release.outputs.latest_release }}"
+          body: "This PR updates the release version in prometheusOperator.json file to the latest version: ${{ steps.get_latest_release.outputs.latest_release }} "
