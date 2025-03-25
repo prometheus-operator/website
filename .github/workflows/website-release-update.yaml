@@ -1,9 +1,9 @@
 name: Check and Update Release Version
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:   '11 5 * * *' #Every day 05:11AM UTC
-  workflow_dispatch:
 
 jobs:
   check-and-update-release-version:
