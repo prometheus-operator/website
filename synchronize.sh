@@ -6,10 +6,10 @@ rm -rf repos/
 mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
-  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  # git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  ln -s ../../prometheus-operator repos/prometheus-operator 
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
-  ln -s ../../prometheus-operator repos/prometheus-operator 
   ln -s ../../kube-prometheus repos/kube-prometheus
 fi
 
@@ -29,6 +29,7 @@ cp repos/prometheus-operator/Documentation/getting-started/design.md content/doc
 
 # api section
 cp repos/prometheus-operator/Documentation/api-reference/api.md content/docs/api-reference/api.md
+cp repos/prometheus-operator/Documentation/api-reference/elastic-api.md content/docs/api-reference/elastic-api.md
 
 # platform guide
 cp repos/prometheus-operator/Documentation/platform/platform-guide.md content/docs/platform/platform-guide.md
