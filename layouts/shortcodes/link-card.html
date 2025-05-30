@@ -17,7 +17,7 @@
   {{- end }}
   
   {{- define "partials/inline/link-card.html" }}
-    <div class="card text-end w-100{{ with .class}} {{ . }}{{ end }}">
+    <div class="card text-end w-100{{ with .class}} {{ . }}{{ end }}" style="border: 2px solid transparent; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='#8cd2f7'" onmouseout="this.style.borderColor='transparent'">
       <div class="card-body d-flex">
         <div class="d-flex flex-column me-auto text-start">
           <h5 class="card-title my-0"><a href="{{ .href }}"{{ with .target}} target="{{ . }}"{{ end }} class="stretched-link text-reset text-decoration-none"{{ with .rel}} rel="{{ . }}"{{ end }}>{{ .title }}</a></h5>
