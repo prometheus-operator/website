@@ -53,6 +53,7 @@ cp repos/prometheus-operator/Documentation/developer/scrapeclass.md content/docs
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md
 cp repos/prometheus-operator/TESTING.md content/docs/community/testing.md
+cp repos/prometheus-operator/Documentation/materials.md content/docs/community/materials.md
 cp repos/prometheus-operator/DCO content/docs/community/dco.md
 cp repos/prometheus-operator/code-of-conduct.md content/docs/community/code-of-conduct.md
 cp repos/prometheus-operator/RELEASE.md content/docs/community/release.md
