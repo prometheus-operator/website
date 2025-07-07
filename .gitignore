@@ -12,6 +12,7 @@
 /content/docs/api-reference/*
 /content/docs/developer/*
 /content/docs/platform/*
+/content/docs/proposals/*
 /content/docs/community/*
 /content/kube-prometheus/kube/*
 
@@ -19,5 +20,6 @@
 !/content/docs/api-reference/_index.md
 !/content/docs/developer/_index.md
 !/content/docs/platform/_index.md
+!/content/docs/proposals/_index.md
 !/content/docs/community/_index.md
 !/content/kube-prometheus/kube/_index.md

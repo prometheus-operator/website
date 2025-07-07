@@ -6,10 +6,10 @@ rm -rf repos/
 mkdir repos/
 
 if [[ -z "$USE_LOCAL_REPOSITORIES" ]]; then
-  git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  # git clone https://github.com/prometheus-operator/prometheus-operator -b main --depth 1 repos/prometheus-operator
+  ln -s ../../prometheus-operator repos/prometheus-operator 
   git clone https://github.com/prometheus-operator/kube-prometheus -b main --depth 1 repos/kube-prometheus
 else
-  ln -s ../../prometheus-operator repos/prometheus-operator 
   ln -s ../../kube-prometheus repos/kube-prometheus
 fi
 
@@ -49,6 +49,19 @@ cp repos/prometheus-operator/Documentation/developer/getting-started.md content/
 cp repos/prometheus-operator/Documentation/developer/alerting.md content/docs/developer/alerting.md
 cp repos/prometheus-operator/Documentation/developer/scrapeconfig.md content/docs/developer/scrapeconfig.md
 cp repos/prometheus-operator/Documentation/developer/scrapeclass.md content/docs/developer/scrapeclass.md
+
+# proposals
+cp repos/prometheus-operator/Documentation/proposals/202201-prometheus-agent.md content/docs/proposals/prometheus-agent.md
+cp repos/prometheus-operator/Documentation/proposals/202212-scrape-config.md content/docs/proposals/scrape-config.md
+cp repos/prometheus-operator/Documentation/proposals/202305-scrapeclasses.md content/docs/proposals/scrapeclasses.md
+cp repos/prometheus-operator/Documentation/proposals/202309-controller-id.md content/docs/proposals/controller-id.md
+cp repos/prometheus-operator/Documentation/proposals/202310-shard-autoscaling.md content/docs/proposals/shard-autoscaling.md
+cp repos/prometheus-operator/Documentation/proposals/202405-agent-daemonset.md content/docs/proposals/agent-daemonset.md
+cp repos/prometheus-operator/Documentation/proposals/202405-docs-restructuring.md content/docs/proposals/docs-restructuring.md
+cp repos/prometheus-operator/Documentation/proposals/202405-scrapeconfig-graduation.md content/docs/proposals/scrapeconfig-graduation.md
+cp repos/prometheus-operator/Documentation/proposals/202407-remote-write.md content/docs/proposals/remote-write.md
+cp repos/prometheus-operator/Documentation/proposals/202409-status-subresource.md content/docs/proposals/status-subresource.md
+cp repos/prometheus-operator/Documentation/proposals/202411-zone-aware-sharding.md content/docs/proposals/zone-aware-sharding.md
 
 # community section
 cp repos/prometheus-operator/CONTRIBUTING.md content/docs/community/contributing.md

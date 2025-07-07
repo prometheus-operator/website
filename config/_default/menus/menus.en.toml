@@ -28,8 +28,14 @@
   url = "/docs/developer/"
 
 [[docs]]
-  name = "Community"
+  name = "Proposals"
   weight = 50
+  identifier = "/docs/proposals/"
+  url = "/docs/proposals/"
+
+[[docs]]
+  name = "Community"
+  weight = 60
   identifier = "community"
   url = "/docs/community/"
 
