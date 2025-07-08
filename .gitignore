@@ -21,5 +21,7 @@
 !/content/docs/developer/_index.md
 !/content/docs/platform/_index.md
 !/content/docs/proposals/_index.md
+!/content/docs/proposals/implemented/_index.md
+!/content/docs/proposals/accepted/_index.md
 !/content/docs/community/_index.md
 !/content/kube-prometheus/kube/_index.md
