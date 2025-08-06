@@ -57,11 +57,11 @@ cp repos/prometheus-operator/Documentation/proposals/implemented/202201-promethe
 cp repos/prometheus-operator/Documentation/proposals/implemented/202212-scrape-config.md content/docs/proposals/implemented/scrape-config.md
 cp repos/prometheus-operator/Documentation/proposals/implemented/202305-scrapeclasses.md content/docs/proposals/implemented/scrapeclasses.md
 cp repos/prometheus-operator/Documentation/proposals/implemented/202309-controller-id.md content/docs/proposals/implemented/controller-id.md
-cp repos/prometheus-operator/Documentation/proposals/implemented/202310-shard-autoscaling.md content/docs/proposals/implemented/shard-autoscaling.md
 cp repos/prometheus-operator/Documentation/proposals/implemented/202405-docs-restructuring.md content/docs/proposals/implemented/docs-restructuring.md
 cp repos/prometheus-operator/Documentation/proposals/implemented/202409-status-subresource.md content/docs/proposals/implemented/status-subresource.md
 
 # accepted
+cp repos/prometheus-operator/Documentation/proposals/accepted/202310-shard-autoscaling.md content/docs/proposals/accepted/shard-autoscaling.md
 cp repos/prometheus-operator/Documentation/proposals/accepted/202405-agent-daemonset.md content/docs/proposals/accepted/agent-daemonset.md
 cp repos/prometheus-operator/Documentation/proposals/accepted/202405-scrapeconfig-graduation.md content/docs/proposals/accepted/scrapeconfig-graduation.md
 cp repos/prometheus-operator/Documentation/proposals/accepted/202407-remote-write.md content/docs/proposals/accepted/remote-write.md
