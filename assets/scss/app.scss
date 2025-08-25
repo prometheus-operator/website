@@ -64,9 +64,11 @@ $link-hover-color: $secondary;
   background: linear-gradient(90deg, var(--kubernetes), var(--prometheus), var(--kubernetes));
   background-size: 200% 200%;
 
+  /* FIXME: This animation causes 100% CPU load?
   -webkit-animation: headerBarGradient 15s ease infinite;
   -moz-animation: headerBarGradient 15s ease infinite;
   animation: headerBarGradient 15s ease infinite;
+  */
 }
 
 @-webkit-keyframes headerBarGradient {
