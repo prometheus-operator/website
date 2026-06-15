@@ -43,6 +43,7 @@ cp repos/prometheus-operator/Documentation/platform/thanos.md content/docs/platf
 cp repos/prometheus-operator/Documentation/platform/troubleshooting.md content/docs/platform/troubleshooting.md
 cp repos/prometheus-operator/Documentation/platform/storage.md content/docs/platform/storage.md
 cp repos/prometheus-operator/Documentation/platform/strategic-merge-patch.md content/docs/platform/strategic-merge-patch.md
+cp repos/prometheus-operator/Documentation/platform/sharding.md content/docs/platform/sharding.md
 
 # developer guide
 cp repos/prometheus-operator/Documentation/developer/getting-started.md content/docs/developer/getting-started.md
